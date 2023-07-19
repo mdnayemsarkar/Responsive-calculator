@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@600&family=Kablammo&family=Montserrat:wght@600&family=Ysabeau+SC&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inconsolata", monospace;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Ysabeau SC", sans-serif;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(45deg, #172e7b, #1c1f23);
+}
+h1 {
+  color: #f57b17;
+}
+.calculator {
+  border: 1px solid #1d2359;
+  padding: 2rem;
+  border-radius: 1rem;
+  background: transparent;
+  box-shadow: 0px 3px 15px rgba(113, 115, 119, 0.6);
+}
+input {
+  /* width: 320px; */
+  width: 18rem;
+  border: none;
+  /* padding: 24px; */
+  padding: 2rem;
+  /* margin: 10px; */
+  margin: 1rem;
+  background: transparent;
+  box-shadow: 0px 3px 15px rgba(172, 143, 143, 0.1);
+  /* font-size: 40px; */
+  font-size: 2rem;
+  color: #ffffff;
+  text-align: right;
+  cursor: pointer;
+}
+input::placeholder {
+  color: #ffffff;
+}
+button {
+  border: none;
+  width: 60px;
+  height: 60px;
+  margin: 5px;
+  border-radius: 50%;
+  background: transparent;
+  color: #ffffff;
+  font-size: 20px;
+  box-shadow: -8px -8px 15px rgba(246, 242, 242, 0.1);
+  cursor: pointer;
+}
+.equalbtn {
+  background: #f57b17;
+}
+.operator {
+  color: rgb(12, 209, 239);
+}
+
+/* for small device  */
+@media only screen and (max-width: 480px) {
+  /* Add your styles for mobile devices here */
+  body {
+    /* Example style for body on mobile */
+    background: linear-gradient(45deg, #172e7b, #1c1f23);
+  }
+  .calculator {
+    /* Example style for calculator on mobile */
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0px 3px 10px rgba(113, 115, 119, 0.6);
+  }
+  input {
+    /* Example style for input on mobile */
+    width: 14rem;
+    padding: 1rem;
+    margin: 0.5rem;
+    font-size: 1.5rem;
+  }
+  button {
+    /* Example style for buttons on mobile */
+    width: 40px;
+    height: 40px;
+    margin: 0.2rem;
+    font-size: 14px;
+    box-shadow: -4px -4px 10px rgba(246, 242, 242, 0.1);
+  }
+  .equalbtn {
+    /* Example style for equal button on mobile */
+    background: #f57b17;
+  }
+  .operator {
+    /* Example style for operator buttons on mobile */
+    color: rgb(12, 209, 239);
+  }
+}
